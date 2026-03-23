@@ -4,9 +4,12 @@ package main
 
 import "fmt"
 
+//a:=4 syntax error: Outside function every statement begins with keyword
 var c,python,java bool // package level scope
 
 func main(){
+	a:=7.97 // short assignment statement
 	var i int // local/functional level scope
-	fmt.Println(i,c,python,java) // Automatically initialise to 0 for bool whic false
+	i=7
+	fmt.Println(i,c,python,java,a) // Automatically initialise to 0 for bool which false
 }
